@@ -10,7 +10,8 @@
     <form method="POST" action="{% url 'fileapp:uploads'%}" enctype="multipart/form-data">
         {%csrf_token%}
         <!-- <input type="text" name="filename" placeholder="entrer votre name fichier">  -->
-        <input type="file" name="myfiles" multiple/>
+        <!-- <input type="file" name="" multiple/> -->
+        <input type="file" id="myfiles" name="myfiles "  class="custom-inputFile" webkitdirectory directory multiple/>
         <button type="submit">File Upload</button>
     </form>
 </body>
